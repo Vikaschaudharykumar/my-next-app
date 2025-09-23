@@ -214,7 +214,7 @@ const Resume = () => {
           <div className="container">
             <p>Thank you for reviewing my resume!</p>
             <div className="social-links">
-              <a href="https://github.com/vikaschaudharykumar" target="_blank" rel="noopener noreferrer">
+              <a href="https://gitlab.com/vk643478" target="_blank" rel="noopener noreferrer">
                 <FaGithub />
               </a>
               <a href="https://linkedin.com/in/vikash-chaudhary-3b3926285" target="_blank" rel="noopener noreferrer">
