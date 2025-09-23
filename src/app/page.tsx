@@ -1,6 +1,8 @@
 'use client';
 import React from 'react';
 import Head from 'next/head';
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaLocationDot, FaEnvelope, FaPhone } from "react-icons/fa6";
 
 const Resume = () => {
   return (
@@ -9,6 +11,12 @@ const Resume = () => {
         <title>Vikash Kumar - Resume</title>
         <meta name="description" content="Vikash Kumar - Full Stack Developer Resume" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+          integrity="sha512-..."
+        />
+
       </Head>
 
       <div className="resume-page">
@@ -18,9 +26,9 @@ const Resume = () => {
             <h1>VIKASH KUMAR</h1>
             <h2>Full Stack Developer</h2>
             <div className="contact-info">
-              <p><i className="fas fa-map-marker-alt"></i> Ghaziabad (Raghunathpuri)</p>
-              <p><i className="fas fa-envelope"></i> vk643478@gmail.com</p>
-              <p><i className="fas fa-phone"></i> +91 7668160587</p>
+              <p><FaLocationDot /> Ghaziabad (Raghunathpuri)</p>
+              <p><FaEnvelope /> vk643478@gmail.com</p>
+              <p><FaPhone /> +91 7668160587</p>
             </div>
           </div>
         </header>
@@ -32,20 +40,33 @@ const Resume = () => {
             <div className="left-column">
               {/* Summary Section */}
               <section className="resume-section">
-                <h3 className="section-title">
-                  <i className="fas fa-user"></i> Professional Summary
-                </h3>
+                <div className="section-title" style={{ justifyContent: 'space-between' }}>
+                  <h3><i className="fa-solid fa-user"></i> Professional Summary</h3>
+                  <div className="download-section">
+                    <a
+                      href="https://vikaschaudharykumar.github.io/portfolio/"
+                      className="download-btn"
+                    >
+                      <i className="fa-solid fa-download"></i> View Portfolio
+                    </a>
+                  </div>
+                </div>
+
                 <p>
-                  Motivated and skilled Full-Stack Developer with over 1 year of hands-on experience in designing, developing, and deploying dynamic web applications using React.js, Next.js, Node.js, PHP (Laravel) and other modern technologies. Strong background in computer science, with a diploma and ongoing B.Tech through lateral entry. Proficient in both frontend and backend development with a passion for learning and delivering scalable software solutions.
+                  Motivated and skilled Full-Stack Developer with over 1 year of hands-on
+                  experience in designing, developing, and deploying dynamic web
+                  applications using React.js, Next.js, Node.js, PHP (Laravel) and other
+                  modern technologies...
                 </p>
               </section>
+
 
               {/* Work Experience Section */}
               <section className="resume-section">
                 <h3 className="section-title">
                   <i className="fas fa-briefcase"></i> Work Experience
                 </h3>
-                
+
                 <div className="experience-item">
                   <div className="experience-header">
                     <h4>iNextErp Solutions Pvt Ltd, Noida</h4>
@@ -78,7 +99,7 @@ const Resume = () => {
                 <h3 className="section-title">
                   <i className="fas fa-graduation-cap"></i> Education
                 </h3>
-                
+
                 <div className="education-item">
                   <h4>Bachelor of Technology (B.Tech) – Computer Science Engineering</h4>
                   <p className="institution">Subharti University (Meerut) - Lateral Entry</p>
@@ -113,7 +134,7 @@ const Resume = () => {
                 <h3 className="section-title">
                   <i className="fas fa-code"></i> Technical Skills
                 </h3>
-                
+
                 <div className="skills-category">
                   <h4>Frontend</h4>
                   <div className="skills-list">
@@ -156,7 +177,7 @@ const Resume = () => {
                     <span>MVC Architecture</span>
                     <span>Responsive Design</span>
                     <span>Admin Panel</span>
-                    
+
                   </div>
                 </div>
               </section>
@@ -166,13 +187,13 @@ const Resume = () => {
                 <h3 className="section-title">
                   <i className="fas fa-info-circle"></i> Additional Information
                 </h3>
-                
+
                 <div className="additional-info">
                   <div className="info-item">
                     <h4>Languages</h4>
                     <p>English, Hindi</p>
                   </div>
-                  
+
                   <div className="info-item">
                     <h4>Certification</h4>
                     <p>Full Stack Developer</p>
@@ -183,11 +204,7 @@ const Resume = () => {
               </section>
 
               {/* Download Button */}
-              <div className="download-section">
-                <a href="https://vikaschaudharykumar.github.io/portfolio/" className="download-btn" >
-                  <i className="fas fa-download"></i> View More
-                </a>
-              </div>
+
             </div>
           </div>
         </main>
@@ -198,17 +215,18 @@ const Resume = () => {
             <p>Thank you for reviewing my resume!</p>
             <div className="social-links">
               <a href="https://github.com/vikaschaudharykumar" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-github"></i>
+                <FaGithub />
               </a>
-              <a href="linkedin.com/in/vikash-chaudhary-3b3926285" target="_blank" rel="noopener noreferrer">
-                <i className="fab fa-linkedin"></i>
+              <a href="https://linkedin.com/in/vikash-chaudhary-3b3926285" target="_blank" rel="noopener noreferrer">
+                <FaLinkedin />
               </a>
               <a href="mailto:vk643478@gmail.com">
-                <i className="fas fa-envelope"></i>
+                <FaEnvelope />
               </a>
             </div>
           </div>
         </footer>
+
       </div>
 
       <style jsx>{`
@@ -251,6 +269,7 @@ const Resume = () => {
 
         .contact-info {
           display: flex;
+          
           justify-content: center;
           flex-wrap: wrap;
           gap: 20px;
@@ -259,9 +278,11 @@ const Resume = () => {
 
         .contact-info p {
           display: flex;
+          font-weight: 800;
+          font-weight: 800;
           align-items: center;
           gap: 8px;
-          font-size: 1.1rem;
+          font-size: 1.3rem;
         }
 
         /* Main Content */
@@ -291,9 +312,9 @@ const Resume = () => {
         }
 
         .section-title {
+          font-weight: 800;
           display: flex;
-          align-items: center;
-          gap: 10px;
+          align-items: center;            /* vertical alignment */
           font-size: 1.4rem;
           margin-bottom: 20px;
           padding-bottom: 10px;
@@ -301,6 +322,12 @@ const Resume = () => {
           color: #2c3e50;
         }
 
+        .section-title h3 {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          margin: 0; /* remove default h3 margin */
+        }
         .section-title i {
           color: #3498db;
         }
@@ -312,6 +339,7 @@ const Resume = () => {
 
         .experience-header {
           display: flex;
+          font-weight: 800;
           justify-content: space-between;
           align-items: center;
           margin-bottom: 10px;
@@ -377,11 +405,15 @@ const Resume = () => {
         /* Skills Section */
         .skills-category {
           margin-bottom: 20px;
+              font-weight: 800;
+
         }
 
         .skills-category h4 {
           font-size: 1.1rem;
           color: #2c3e50;
+              font-weight: 800;
+
           margin-bottom: 10px;
           padding-left: 5px;
           border-left: 3px solid #3498db;
@@ -425,27 +457,25 @@ const Resume = () => {
 
         /* Download Button */
         .download-section {
-          text-align: center;
-          margin-top: 20px;
+          margin: 0; /* remove top margin */
         }
 
         .download-btn {
           display: inline-flex;
           align-items: center;
-          gap: 10px;
+          gap: 8px;
           background: linear-gradient(135deg, #3498db 0%, #2c3e50 100%);
           color: white;
-          padding: 12px 25px;
-          border-radius: 30px;
+          padding: 8px 18px;
+          border-radius: 20px;
           text-decoration: none;
+          font-size: 0.9rem;
           font-weight: 600;
           transition: all 0.3s ease;
-          box-shadow: 0 4px 10px rgba(52, 152, 219, 0.3);
         }
-
         .download-btn:hover {
-          transform: translateY(-3px);
-          box-shadow: 0 6px 15px rgba(52, 152, 219, 0.4);
+          transform: translateY(-2px);
+          background: linear-gradient(135deg, #2c3e50 0%, #3498db 100%);
         }
 
         /* Footer */
@@ -459,6 +489,7 @@ const Resume = () => {
 
         .resume-footer p {
           font-size: 1.1rem;
+          font-weight: 800; 
           margin-bottom: 15px;
         }
 
@@ -521,6 +552,7 @@ const Resume = () => {
             flex-direction: column;
             gap: 5px;
           }
+          
         }
       `}</style>
     </>
