@@ -278,6 +278,7 @@ const Resume = () => {
         </footer>
       </div>
 
+     
       <style jsx>{`
         .resume-page {
           min-height: 100vh;
@@ -377,7 +378,7 @@ const Resume = () => {
           transform: translateY(-3px);
           box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
         }
-1e293b
+
         .section-header {
           display: flex;
           justify-content: space-between;
