@@ -44,7 +44,7 @@ const Resume = () => {
                   <h3><i className="fa-solid fa-user"></i> Professional Summary</h3>
                   <div className="download-section">
                     <a
-                      href="https://vikaschaudharykumar.github.io/portfolio/"
+                      href="https://vikash-portfolio-sage.vercel.app/"
                       className="download-btn"
                     >
                       <i className="fa-solid fa-download"></i> View Portfolio
